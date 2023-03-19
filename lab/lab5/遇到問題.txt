@@ -1,0 +1,37 @@
+IDLE
+1.7-segment 跟 LED 閃爍不同步
+2.進入到TYPE要多按一次BTN
+AMOUNT
+1.amount沒有先變成0
+2.票數量不能 = 0
+
+1.IDLE閃爍問題
+2.AMOUNT會跑出奇怪的數字
+3.跑第二次IDLE時7-segment 跟 LED 閃爍不同步
+4.CHANGE數到0就要停了
+
+1.IDLE進TYPE(clk從慢變快來不及把IDLE內的值push上就換成TYPE的值了) OK
+	ans:改了clk
+2.TYPE回IDLE時7,LED不同步(不同時亮暗)
+	ans:在BCD TYPE中加入回IDLE的next值
+3.AMOUNT時同2.
+	ans:同上
+4.RELEASE閃爍時間第5秒太快了
+	ans:改成cycle >= 5的時候變
+5.CHANGE如果money = price會把0也扣一次
+	ans:改成BCD0 + BCD1 * 4'd10 == 0結束 (可能還是會有問題)
+6.CHANGE扣錢有問題
+	ans:改了一下CHANGE扣錢的寫法
+7.如果直接從AMOUNT按cancel進CHANGE 價錢會跑掉
+	ans:CHANGE內加上money != 0的判斷來給值
+
+1.閃爍不同步
+	ans:再改一次next判斷值
+2.RELEASE閃爍時間第5秒太快了
+	ans:改成cycle >= 6的時候變
+3.扣錢變成不會顯示0了
+	ans:改成BCD0 + BCD1 * 4'd10 < 0結束
+4.直接從AMOUNT按cancel進CHANGE扣錢有問題
+	ans:額外寫了一個block來處理change然後再assign到next_BCD上
+
+1.cycle一直會多數一個是因為要等到state的clk posedge

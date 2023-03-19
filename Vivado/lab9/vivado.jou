@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec 29 16:15:14 2021
+# Process ID: 8392
+# Current directory: C:/Users/vince/Desktop/Vivado/lab9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32 C:\Users\vince\Desktop\Vivado\lab9\lab9.xpr
+# Log file: C:/Users/vince/Desktop/Vivado/lab9/vivado.log
+# Journal file: C:/Users/vince/Desktop/Vivado/lab9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vince/Desktop/Vivado/lab9/lab9.xpr
+wait_on_run impl_1

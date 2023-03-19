@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Nov 27 21:48:52 2021
+# Process ID: 23204
+# Current directory: C:/Users/vince/Desktop/Vivado/diaplay_demo2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23028 C:\Users\vince\Desktop\Vivado\diaplay_demo2\diaplay_demo2.xpr
+# Log file: C:/Users/vince/Desktop/Vivado/diaplay_demo2/vivado.log
+# Journal file: C:/Users/vince/Desktop/Vivado/diaplay_demo2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vince/Desktop/Vivado/diaplay_demo2/diaplay_demo2.xpr
+update_compile_order -fileset sources_1

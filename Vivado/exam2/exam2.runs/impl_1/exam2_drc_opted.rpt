@@ -1,0 +1,44 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Fri Dec 24 15:44:17 2021
+| Host         : LAPTOP-97HEA2HM running 64-bit major release  (build 9200)
+| Command      : report_drc -file exam2_drc_opted.rpt -pb exam2_drc_opted.pb -rpx exam2_drc_opted.rpx
+| Design       : exam2
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT BCD1[3]_i_2 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
+BCD1_reg[0], BCD1_reg[1], BCD1_reg[2], BCD1_reg[3], BCD2_reg[0],
+BCD2_reg[1], BCD2_reg[2], BCD2_reg[3], BCD3_reg[0], BCD3_reg[1],
+BCD3_reg[2], BCD4_reg[0]
+Related violations: <none>
+
+

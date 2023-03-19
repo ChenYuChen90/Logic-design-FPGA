@@ -1,0 +1,99 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Fri Jan 14 15:22:02 2022
+| Host         : LAPTOP-97HEA2HM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab8_control_sets_placed.rpt
+| Design       : lab8
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             142 |           51 |
+| No           | No                    | Yes                    |              79 |           28 |
+| No           | Yes                   | No                     |              51 |           20 |
+| Yes          | No                    | No                     |              53 |           18 |
+| Yes          | No                    | Yes                    |              23 |            7 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |                  Enable Signal                 |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  _led_reg[15]_i_2_n_1                  |                                                |                                        |                3 |              3 |         1.00 |
+|  n_0_2466_BUFG                         |                                                |                                        |                3 |              3 |         1.00 |
+|  _led_reg[4]_i_2_n_1                   |                                                |                                        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                         | key/inst/inst/Ps2Interface_i/bits_count        |                                        |                2 |              4 |         2.00 |
+|  num_reg[15]                           | onevu/E[0]                                     | rst_IBUF                               |                1 |              4 |         4.00 |
+|  sev/C16/out[0]                        |                                                | sev/p_0_in                             |                1 |              4 |         4.00 |
+|  num_reg[15]                           | oneho/octave_reg[0]                            | rst_IBUF                               |                4 |              7 |         1.75 |
+|  noteGen_00/audio_left_reg[15]_i_2_n_1 |                                                | noteGen_00/audio_right_reg[15]_i_2_n_1 |                3 |              7 |         2.33 |
+|  noteGen_00/audio_left_reg[15]_i_2_n_1 |                                                | noteGen_00/audio_left_reg[15]_i_3_n_1  |                5 |              7 |         1.40 |
+|  clk_IBUF_BUFG                         | key/inst/inst/Ps2Interface_i/rx_valid          |                                        |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                         | key/inst/inst/Ps2Interface_i/rx_finish         |                                        |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                         | key/key                                        |                                        |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG                         | key/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 |                                        |                2 |             11 |         5.50 |
+|  playerCtrl_00/E[0]                    |                                                | music_01/toneL_reg[15]_i_3_n_1         |                5 |             11 |         2.20 |
+|  clk_IBUF_BUFG                         | key/op/pulse_been_ready                        |                                        |                8 |             12 |         1.50 |
+|  n_0_2466_BUFG                         | playerCtrl_00/ibeat[11]_i_1_n_1                | rst_IBUF                               |                2 |             12 |         6.00 |
+|  sc/out[1]                             |                                                | rst_IBUF                               |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG                         |                                                | n_0_2466_BUFG                          |                6 |             22 |         3.67 |
+|  num_reg[15]                           |                                                |                                        |               10 |             36 |         3.60 |
+|  clk_IBUF_BUFG                         |                                                | rst_IBUF                               |               21 |             65 |         3.10 |
+|  clk_IBUF_BUFG                         |                                                |                                        |               34 |             96 |         2.82 |
++----------------------------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+

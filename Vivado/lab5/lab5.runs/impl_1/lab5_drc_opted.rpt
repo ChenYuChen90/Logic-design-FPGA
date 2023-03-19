@@ -1,0 +1,51 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Nov  6 19:28:03 2021
+| Host         : LAPTOP-97HEA2HM running 64-bit major release  (build 9200)
+| Command      : report_drc -file lab5_drc_opted.rpt -pb lab5_drc_opted.pb -rpx lab5_drc_opted.rpx
+| Design       : lab5
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT clk_05/machine_state[2]_i_1 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
+machine_state_reg[0], machine_state_reg[1], machine_state_reg[2]
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT clk_05/price[5]_i_3 is driving clock pin of 28 cells. This could lead to large hold time violations. Involved cells are:
+cycle_reg[0], cycle_reg[1], cycle_reg[2], little_reg[0], little_reg[1],
+little_reg[2], little_reg[3], little_reg[4], mem0_reg[0], mem0_reg[1],
+mem0_reg[2], mem0_reg[3], mem3_reg[0], mem3_reg[1], mem3_reg[2]
+ (the first 15 of 28 listed)
+Related violations: <none>
+
+

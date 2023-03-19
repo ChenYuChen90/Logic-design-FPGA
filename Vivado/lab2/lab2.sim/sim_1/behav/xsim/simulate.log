@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Starting the simulation
+190 Terminating the simulation...
+>>>> [PASS]  Congratulations!
+$finish called at time : 190 ns : File "C:/Users/vince/Desktop/Vivado/lab2/lab2.srcs/sim_1/imports/lab2/lab2_2_t_revised.v" Line 67

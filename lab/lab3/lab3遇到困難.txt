@@ -1,0 +1,10 @@
+bitstream報錯
+1.if else 內容要對稱
+2.不能把output放在if判斷式
+3.不能出現左右有同樣東西的情況
+4.不能直接把output放在combionational block內assign(左右都是)
+5.constriants要確認更新到
+code問題
+1.擴張跟縮減的方法
+2.shifting燈會被邊界吃掉
+3.燈改成48 state change and rst要注意

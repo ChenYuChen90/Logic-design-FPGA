@@ -1,0 +1,9 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/vince/Desktop/Vivado/lab3/lab3.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/vince/Desktop/Vivado/lab3/lab3.srcs/sim_1/imports/lab3/lab3_1_t.v,1633725091,verilog,,,,lab3_1_t,,,,,,,,
+C:/Users/vince/Desktop/Vivado/lab3/lab3.srcs/sim_1/imports/lab3/lab3_2_t.v,1633720516,verilog,,,,lab3_2_t,,,,,,,,
+C:/Users/vince/Desktop/Vivado/lab3/lab3.srcs/sources_1/imports/lab3/lab3_1.v,1633711368,verilog,,C:/Users/vince/Desktop/Vivado/lab3/lab3.srcs/sources_1/imports/lab3/lab3_2.v,,lab3_1,,,,,,,,
+C:/Users/vince/Desktop/Vivado/lab3/lab3.srcs/sources_1/imports/lab3/lab3_2.v,1633724771,verilog,,C:/Users/vince/Desktop/Vivado/lab3/lab3.srcs/sim_1/imports/lab3/lab3_1_t.v,,clock_divider;lab3_2,,,,,,,,

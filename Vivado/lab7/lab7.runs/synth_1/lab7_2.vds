@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec  6 21:07:05 2021
+# Process ID: 22496
+# Current directory: C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1
+# Command line: vivado.exe -log lab7_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab7_2.tcl
+# Log file: C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1/lab7_2.vds
+# Journal file: C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab7_2.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/vince/Desktop/Vivado/lab7/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top lab7_2 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13292
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab7_2' [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:17]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_addr_gen' [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:82]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [C:/Users/vince/Desktop/Vivado/lab7/Debounce.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (2#1) [C:/Users/vince/Desktop/Vivado/lab7/Debounce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [C:/Users/vince/Desktop/Vivado/lab7/KeyboardDecoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1/.Xil/Vivado-22496-LAPTOP-97HEA2HM/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (3#1) [C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1/.Xil/Vivado-22496-LAPTOP-97HEA2HM/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'OnePulse' [C:/Users/vince/Desktop/Vivado/lab7/OnePulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'OnePulse' (4#1) [C:/Users/vince/Desktop/Vivado/lab7/OnePulse.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/vince/Desktop/Vivado/lab7/KeyboardDecoder.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (5#1) [C:/Users/vince/Desktop/Vivado/lab7/KeyboardDecoder.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:194]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:410]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:463]
+INFO: [Synth 8-6155] done synthesizing module 'mem_addr_gen' (6#1) [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:82]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1/.Xil/Vivado-22496-LAPTOP-97HEA2HM/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (7#1) [C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1/.Xil/Vivado-22496-LAPTOP-97HEA2HM/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/vince/Desktop/Vivado/lab7/vga.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (8#1) [C:/Users/vince/Desktop/Vivado/lab7/vga.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lab7_2' (9#1) [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1118.379 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Finished Parsing XDC File [c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Parsing XDC File [c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'mem_addr_gen_inst/key_de/inst'
+Finished Parsing XDC File [c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'mem_addr_gen_inst/key_de/inst'
+Parsing XDC File [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'dir'. [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'dir'. [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'nf'. [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'nf'. [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc:17]
+Finished Parsing XDC File [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/lab7_2_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/vince/Desktop/Vivado/lab7/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab7_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab7_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1118.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  c:/Users/vince/Desktop/Vivado/lab7/lab7.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for blk_mem_gen_0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem_addr_gen_inst/key_de/inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_addr_reg' [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:464]
+WARNING: [Synth 8-327] inferring latch for variable 'rotate_times_reg' [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:412]
+WARNING: [Synth 8-327] inferring latch for variable 'area_reg' [C:/Users/vince/Desktop/Vivado/lab7/lab7_2.v:383]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 24    
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                5 Bit    Registers := 12    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 3     
+	   4 Input   17 Bit        Muxes := 3     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 48    
+	  12 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 25    
+	   4 Input    1 Bit        Muxes := 8     
+	  13 Input    1 Bit        Muxes := 13    
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP p_1_out, operation Mode is: C+A*(B:0x140).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below)
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mem_addr_gen | C+A*(B:0x140) | 17     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1118.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1180.859 ; gain = 62.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |blk_mem_gen_0  |         1|
+|2     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |KeyboardCtrl |     1|
+|2     |blk_mem_gen  |     1|
+|3     |BUFG         |     1|
+|4     |CARRY4       |    71|
+|5     |DSP48E1      |     1|
+|6     |LUT1         |    53|
+|7     |LUT2         |    74|
+|8     |LUT3         |    35|
+|9     |LUT4         |   622|
+|10    |LUT5         |   141|
+|11    |LUT6         |   295|
+|12    |MUXF7        |    68|
+|13    |MUXF8        |    34|
+|14    |FDCE         |   578|
+|15    |FDPE         |    16|
+|16    |FDRE         |    28|
+|17    |FDSE         |     2|
+|18    |LD           |    26|
+|19    |IBUF         |     3|
+|20    |OBUF         |    15|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1181.914 ; gain = 63.535
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1181.914 ; gain = 63.535
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1193.793 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1197.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  LD => LDCE: 26 instances
+
+Synth Design complete, checksum: 39a99058
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 10 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1197.453 ; gain = 79.074
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/vince/Desktop/Vivado/lab7/lab7.runs/synth_1/lab7_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab7_2_utilization_synth.rpt -pb lab7_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 21:07:51 2021...

@@ -1,0 +1,6 @@
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../Xilinx/Vivado/2021.1/data/ip/xpm/xpm_VCOMP.vhd,
+Ps2Interface.v,verilog,xil_defaultlib,../../../../lab7.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v,
+KeyboardCtrl.v,verilog,xil_defaultlib,../../../../lab7.gen/sources_1/ip/KeyboardCtrl_0/src/KeyboardCtrl.v,
+KeyboardCtrl_0.v,verilog,xil_defaultlib,../../../../lab7.gen/sources_1/ip/KeyboardCtrl_0/sim/KeyboardCtrl_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

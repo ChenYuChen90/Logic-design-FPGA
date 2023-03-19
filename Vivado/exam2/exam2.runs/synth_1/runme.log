@@ -1,0 +1,312 @@
+
+*** Running vivado
+    with args -log exam2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source exam2.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source exam2.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/vince/Desktop/Vivado/keyboard_sample/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top exam2 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24652
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'exam2' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:7]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+	Parameter n bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (1#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized1' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+	Parameter n bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized1' (1#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized2' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+	Parameter n bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized2' (1#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:407]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:424]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:424]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:393]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (3#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:393]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (4#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:326]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:437]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [C:/Users/vince/Desktop/Vivado/exam2/exam2.runs/synth_1/.Xil/Vivado-20044-LAPTOP-97HEA2HM/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (5#1) [C:/Users/vince/Desktop/Vivado/exam2/exam2.runs/synth_1/.Xil/Vivado-20044-LAPTOP-97HEA2HM/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-226] default block is never used [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:497]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (6#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:437]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:70]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:129]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'exam2' (7#1) [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1117.250 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/vince/Desktop/Vivado/exam2/exam2.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key/inst'
+Finished Parsing XDC File [c:/Users/vince/Desktop/Vivado/exam2/exam2.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key/inst'
+Parsing XDC File [C:/Users/vince/Desktop/Vivado/exam2/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/vince/Desktop/Vivado/exam2/constraints.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/vince/Desktop/Vivado/exam2/constraints.xdc:120]
+Finished Parsing XDC File [C:/Users/vince/Desktop/Vivado/exam2/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/vince/Desktop/Vivado/exam2/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/exam2_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/vince/Desktop/Vivado/exam2/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exam2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/exam2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1117.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  c:/Users/vince/Desktop/Vivado/exam2/exam2.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  c:/Users/vince/Desktop/Vivado/exam2/exam2.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  c:/Users/vince/Desktop/Vivado/exam2/exam2.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  c:/Users/vince/Desktop/Vivado/exam2/exam2.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for key/inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'digit_reg' in module 'SevenSegment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                              000 |                             1111
+*
+                  iSTATE |                              001 |                             1110
+                 iSTATE0 |                              010 |                             1101
+                 iSTATE1 |                              011 |                             1011
+                 iSTATE2 |                              100 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'digit_reg' using encoding 'sequential' in module 'SevenSegment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+WARNING: [Synth 8-327] inferring latch for variable 'next_led_reg' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:107]
+WARNING: [Synth 8-327] inferring latch for variable 'next_BCD_nums_reg' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:131]
+WARNING: [Synth 8-327] inferring latch for variable 'state_next_reg' [C:/Users/vince/Desktop/Vivado/exam2/109062202.v:73]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 2     
+	   4 Input   10 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 11    
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 29    
+	   4 Input    1 Bit        Muxes := 13    
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1117.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1156.242 ; gain = 38.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |KeyboardCtrl |     1|
+|2     |BUFG         |     1|
+|3     |CARRY4       |    28|
+|4     |LUT1         |     6|
+|5     |LUT2         |    24|
+|6     |LUT3         |    22|
+|7     |LUT4         |   540|
+|8     |LUT5         |    47|
+|9     |LUT6         |   151|
+|10    |MUXF7        |    68|
+|11    |MUXF8        |    32|
+|12    |FDCE         |   588|
+|13    |FDPE         |     3|
+|14    |FDRE         |    97|
+|15    |LD           |    17|
+|16    |LDC          |     1|
+|17    |IBUF         |     3|
+|18    |OBUF         |    27|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1165.285 ; gain = 48.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1165.285 ; gain = 48.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1177.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'exam2' is not ideal for floorplanning, since the cellview 'KeyboardDecoder' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1180.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  LD => LDCE: 17 instances
+  LDC => LDCE: 1 instance 
+
+Synth Design complete, checksum: f0bfbc28
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1180.840 ; gain = 63.590
+INFO: [Common 17-1381] The checkpoint 'C:/Users/vince/Desktop/Vivado/exam2/exam2.runs/synth_1/exam2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file exam2_utilization_synth.rpt -pb exam2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 24 15:43:46 2021...

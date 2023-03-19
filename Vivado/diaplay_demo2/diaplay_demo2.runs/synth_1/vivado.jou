@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Nov 27 18:18:34 2021
+# Process ID: 18244
+# Current directory: C:/Users/vince/Desktop/Vivado/diaplay_demo2/diaplay_demo2.runs/synth_1
+# Command line: vivado.exe -log demo_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source demo_2.tcl
+# Log file: C:/Users/vince/Desktop/Vivado/diaplay_demo2/diaplay_demo2.runs/synth_1/demo_2.vds
+# Journal file: C:/Users/vince/Desktop/Vivado/diaplay_demo2/diaplay_demo2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source demo_2.tcl -notrace

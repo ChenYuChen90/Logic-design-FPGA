@@ -1,0 +1,6 @@
+lab4_1
+count speed 會亂掉
+BCD3 顯示問題
+light control clk_div
+lab4_2
+進新的 state 無法歸零

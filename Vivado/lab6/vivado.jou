@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 23 15:08:36 2021
+# Process ID: 19572
+# Current directory: C:/Users/vince/Desktop/Vivado/lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22396 C:\Users\vince\Desktop\Vivado\lab6\lab6.xpr
+# Log file: C:/Users/vince/Desktop/Vivado/lab6/vivado.log
+# Journal file: C:/Users/vince/Desktop/Vivado/lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vince/Desktop/Vivado/lab6/lab6.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/vince/Desktop/Vivado/lab6/lab06.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/vince/Desktop/Vivado/lab6/lab06.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

@@ -1,0 +1,321 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Oct 12 12:27:14 2021
+| Host         : LAPTOP-97HEA2HM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab3_2_control_sets_placed.rpt
+| Design       : lab3_2
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   243 |
+|    Minimum number of control sets                        |   243 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  1691 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   243 |
+| >= 0 to < 4        |   240 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              83 |           24 |
+| No           | No                    | Yes                    |              80 |           80 |
+| No           | Yes                   | No                     |              80 |           80 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              98 |           86 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+---------------+-------------------------------+------------------+----------------+--------------+
+|          Clock Signal          | Enable Signal |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------+---------------+-------------------------------+------------------+----------------+--------------+
+|  led_state_reg[15]_LDC_i_1_n_0 |               | led_state_reg[15]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[13]_LDC_i_1_n_0 |               | led_state_reg[13]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[14]_LDC_i_1_n_0 |               | led_state_reg[14]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[0]_LDC_i_1_n_0  |               | led_state_reg[0]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[10]_LDC_i_1_n_0 |               | led_state_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[11]_LDC_i_1_n_0 |               | led_state_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[12]_LDC_i_1_n_0 |               | led_state_reg[12]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[1]_LDC_i_1_n_0  |               | led_state_reg[1]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[2]_LDC_i_1_n_0  |               | led_state_reg[2]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[32]_LDC_i_1_n_0 |               | led_state_reg[32]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[39]_LDC_i_1_n_0 |               | led_state_reg[39]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[38]_LDC_i_1_n_0 |               | led_state_reg[38]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[43]_LDC_i_1_n_0 |               | led_state_reg[43]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[3]_LDC_i_1_n_0  |               | led_state_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[40]_LDC_i_1_n_0 |               | led_state_reg[40]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[34]_LDC_i_1_n_0 |               | led_state_reg[34]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[36]_LDC_i_1_n_0 |               | led_state_reg[36]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[41]_LDC_i_1_n_0 |               | led_state_reg[41]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[33]_LDC_i_1_n_0 |               | led_state_reg[33]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[37]_LDC_i_1_n_0 |               | led_state_reg[37]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[42]_LDC_i_1_n_0 |               | led_state_reg[42]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[44]_LDC_i_1_n_0 |               | led_state_reg[44]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[35]_LDC_i_1_n_0 |               | led_state_reg[35]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[46]_LDC_i_1_n_0 |               | led_state_reg[46]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[4]_LDC_i_1_n_0  |               | led_state_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[6]_LDC_i_1_n_0  |               | led_state_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[47]_LDC_i_1_n_0 |               | led_state_reg[47]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[9]_LDC_i_1_n_0  |               | led_state_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  cycle_reg[4]_LDC_i_1_n_0      |               | cycle_reg[4]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  led_state_reg[45]_LDC_i_1_n_0 |               | led_state_reg[45]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  led_state_reg[7]_LDC_i_1_n_0  |               | led_state_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[5]_LDC_i_1_n_0  |               | led_state_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  led_state_reg[8]_LDC_i_1_n_0  |               | led_state_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  cycle_reg[9]_LDC_i_1_n_0      |               | cycle_reg[9]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[7]_LDC_i_1_n_0      |               | cycle_reg[7]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[8]_LDC_i_1_n_0      |               | cycle_reg[8]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  c_26/rst_12                   |               | c_26/rst_11                   |                1 |              1 |         1.00 |
+|  c_26/rst_10                   |               | c_26/rst_9                    |                1 |              1 |         1.00 |
+|  c_26/rst_0                    |               | c_26/rst                      |                1 |              1 |         1.00 |
+|  c_26/rst_20                   |               | c_26/rst_19                   |                1 |              1 |         1.00 |
+|  c_26/rst_14                   |               | c_26/rst_13                   |                1 |              1 |         1.00 |
+|  c_26/rst_30                   |               | c_26/rst_29                   |                1 |              1 |         1.00 |
+|  c_26/rst_2                    |               | c_26/rst_1                    |                1 |              1 |         1.00 |
+|  c_26/rst_16                   |               | c_26/rst_15                   |                1 |              1 |         1.00 |
+|  c_26/rst_6                    |               | c_26/rst_5                    |                1 |              1 |         1.00 |
+|  c_26/rst_26                   |               | c_26/rst_25                   |                1 |              1 |         1.00 |
+|  c_26/rst_4                    |               | c_26/rst_3                    |                1 |              1 |         1.00 |
+|  c_26/rst_24                   |               | c_26/rst_23                   |                1 |              1 |         1.00 |
+|  c_26/rst_22                   |               | c_26/rst_21                   |                1 |              1 |         1.00 |
+|  c_26/rst_18                   |               | c_26/rst_17                   |                1 |              1 |         1.00 |
+|  c_26/rst_28                   |               | c_26/rst_27                   |                1 |              1 |         1.00 |
+|  c_26/rst_8                    |               | c_26/rst_7                    |                1 |              1 |         1.00 |
+|  cycle_reg[6]_LDC_i_1_n_0      |               | cycle_reg[6]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[0]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[13]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[12]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[14]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[15]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[32]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[1]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[2]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[44]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[40]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[42]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[38]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[33]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[34]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[41]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[39]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[36]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[35]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[37]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[43]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[46]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[47]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[45]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | led_state_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[9]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[7]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[8]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_1                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst                      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_11                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_19                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_25                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_23                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_5                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_17                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_7                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_9                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_3                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_15                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_29                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_27                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_13                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | c_26/rst_21                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[13]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[0]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[14]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[15]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[12]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[11]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[10]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[19]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[23]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[20]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[18]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[16]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[22]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[21]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[1]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[17]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[24]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[28]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[29]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[4]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[2]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[27]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[30]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[31]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[3]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[5]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[25]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[26]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   |               | cycle_reg[6]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[15]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[13]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[14]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[0]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[10]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[11]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[12]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[1]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[2]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[32]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[39]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[38]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[43]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[3]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[40]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[34]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[36]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[41]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[33]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[37]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[42]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[44]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[35]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[46]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[4]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[6]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[47]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[9]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[45]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[7]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[5]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | led_state_reg[8]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[9]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[7]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[8]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_12                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_10                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_0                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_20                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_14                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_30                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_2                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_16                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_6                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_26                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_4                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_24                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_22                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_18                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_28                   |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | c_26/rst_8                    |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[0]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[10]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[12]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[11]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[13]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[15]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[14]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[23]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[20]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[24]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[19]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[25]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[17]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[21]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[16]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[18]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[22]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[1]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[5]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[2]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[3]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[27]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[26]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[29]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[30]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[31]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[28]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[4]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | cycle_reg[6]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[0]_LDC_i_1_n_0      |               | cycle_reg[0]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[10]_LDC_i_1_n_0     |               | cycle_reg[10]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[12]_LDC_i_1_n_0     |               | cycle_reg[12]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[11]_LDC_i_1_n_0     |               | cycle_reg[11]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[13]_LDC_i_1_n_0     |               | cycle_reg[13]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[15]_LDC_i_1_n_0     |               | cycle_reg[15]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[14]_LDC_i_1_n_0     |               | cycle_reg[14]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[23]_LDC_i_1_n_0     |               | cycle_reg[23]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[20]_LDC_i_1_n_0     |               | cycle_reg[20]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[24]_LDC_i_1_n_0     |               | cycle_reg[24]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[19]_LDC_i_1_n_0     |               | cycle_reg[19]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[25]_LDC_i_1_n_0     |               | cycle_reg[25]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[17]_LDC_i_1_n_0     |               | cycle_reg[17]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[21]_LDC_i_1_n_0     |               | cycle_reg[21]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[16]_LDC_i_1_n_0     |               | cycle_reg[16]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[18]_LDC_i_1_n_0     |               | cycle_reg[18]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[22]_LDC_i_1_n_0     |               | cycle_reg[22]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[1]_LDC_i_1_n_0      |               | cycle_reg[1]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[5]_LDC_i_1_n_0      |               | cycle_reg[5]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[2]_LDC_i_1_n_0      |               | cycle_reg[2]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[3]_LDC_i_1_n_0      |               | cycle_reg[3]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  cycle_reg[27]_LDC_i_1_n_0     |               | cycle_reg[27]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[26]_LDC_i_1_n_0     |               | cycle_reg[26]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[29]_LDC_i_1_n_0     |               | cycle_reg[29]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[30]_LDC_i_1_n_0     |               | cycle_reg[30]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[31]_LDC_i_1_n_0     |               | cycle_reg[31]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  cycle_reg[28]_LDC_i_1_n_0     |               | cycle_reg[28]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  clk_25_BUFG                   | en_IBUF       | rst_IBUF                      |                6 |             18 |         3.00 |
+| ~state_BUFG[0]                 |               |                               |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                 |               |                               |               14 |             51 |         3.64 |
++--------------------------------+---------------+-------------------------------+------------------+----------------+--------------+
+
+
